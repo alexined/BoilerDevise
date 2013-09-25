@@ -1,0 +1,41 @@
+# OSX
+.DS_Store
+
+# VIM
+*.s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+# RubyMine
+.idea/
+
+# Ruby / Rails
+*.gem
+*.rbc
+.bundle
+.config
+coverage
+InstalledFiles
+lib/bundler/man
+pkg
+rdoc
+spec/reports
+test/tmp
+test/version_tmp
+tmp
+/log/*.log
+config/database.yml
+app/assets/stylesheets/.sass-cache/
+
+vendor/assets/javascripts/
+node_modules
+.env
+.tddium*
+
+public/uploads/
+public/assets/
+
+*.sublime-project
+*.sublime-workspace
