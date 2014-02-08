@@ -8,6 +8,9 @@ gem 'rails', '4.0.0'
 # Use Devise for user authentication
 gem 'devise', :git => 'git://github.com/plataformatec/devise.git', :ref => '49aebde'
 
+# Social network authentication
+gem 'omniauth',                     '1.1.4'
+
 # Use sqlite3 as the database for Active Record
 gem 'pg',							'0.17.0'
 
@@ -19,6 +22,8 @@ gem 'unicorn',                      '4.6.3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
+gem 'neat',                         '1.3.0'
+gem 'bootstrap-sass-rails',         '3.0.0.2'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
