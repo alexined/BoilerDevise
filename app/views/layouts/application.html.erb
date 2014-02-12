@@ -7,6 +7,18 @@
     <%= stylesheet_link_tag    "application", media: "all" %>
     <%= javascript_include_tag :application %>
     <%= yield(:head) %>
+
+    <%= javascript_tag do %>
+        ;(function(window, $) {
+          $(document).ready(function(){
+            var router_name = "<%= params[:controller].split(/\//).map{|w|w.capitalize}.join('').pluralize %>Router";
+            if ( !( router_name in BoilerDevise.Routers )) router_name = 'App'
+            window.router = new window["BoilerDevise"]["Routers"][router_name]({ });
+            Backbone.history.start();
+          })
+        })(this, $);
+    <% end %>
+
   </head>
   <body>
     <div id="container">
