@@ -1,0 +1,105 @@
+/* These are the login screens you see when you click login from the global nav bar */
+
+.regular-login {
+	@include outer-container;
+	overflow: hidden;
+
+	.container {
+		padding: 50px 0;
+		@include span-columns(4);
+		@include shift(3);
+		@include media($break708) {
+			@include span-columns(8);
+			@include shift(1);
+		}
+	}
+
+	.sign-in-title {
+		@include large-dark-title;
+		@include large-type;
+		margin-bottom: 25px;
+	}
+
+	form {
+		margin-bottom: 25px;
+		padding-bottom: 25px;
+		border-bottom: 1px solid $light-gray2;
+		overflow: hidden;
+
+		.field-section {
+			margin-bottom: 15px;
+
+			label {
+				@include label1;
+				margin-bottom: 5px;
+				font-weight: 700;
+			}
+
+			input {
+				@include text-input;
+				padding: 12px;
+				width: 100%;
+				@include normal-type;
+			}
+ 		}
+
+		.remember-me {
+			margin-bottom: 15px;
+			display: block;
+			@include normal-type;
+
+			label {
+				display: inline;
+			}
+
+			a {
+				color: $buzzblue;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		.avatar-section {
+			overflow: hidden;
+			margin: 25px 0 20px;
+
+			img {
+				display: block;
+				margin-bottom: 15px;
+				height: 130px;
+				border-radius: 38px;
+			}
+
+			input {
+				width: 200px;
+			}
+		}
+	}
+
+	.other-links {
+
+		a {
+			display: block;
+			color: $buzzblue;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.cta {
+		input {
+			@include medium-button;
+			float: right;
+		}
+ }
+
+	.fb-connect {
+		width: 100%;
+		margin-bottom: 35px;
+		@include fb-connect;
+	}
+}

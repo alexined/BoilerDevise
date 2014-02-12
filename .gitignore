@@ -38,3 +38,5 @@ public/assets/
 
 *.sublime-project
 *.sublime-workspace
+
+config/database.yml

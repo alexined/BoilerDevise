@@ -10,4 +10,9 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:sign_up) { |u| u.permit! }
   end
 
+  # restrict access to admin module for non-admin users
+  def authenticate_admin_user!
+    redirect_to root_path if current_user.nil? || !current_user.admin?
+  end
+
 end
