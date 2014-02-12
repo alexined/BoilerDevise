@@ -11,6 +11,32 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
-//= require turbolinks
+//= require underscore
+//= require backbone
+//= require backbone_rails_sync
+//= require backbone_datalink
+//= require backbone/boiler-device
 //= require_tree .
+
+;(function(window, $) {
+
+  //source: http://stackoverflow.com/questions/1184624/convert-form-data-to-js-object-with-jquery
+  $.fn.serializeObject = function(paramRoot) {
+    var o = {};
+    var a = this.serializeArray();
+    $.each(a, function() {
+        var name = this.name.indexOf(paramRoot) > -1 ? this.name.replace(paramRoot+'[','').replace(']','') : null
+        if (!name) return
+        if (name.indexOf('[]') > -1) {
+            if (!o[name].push) {
+                o[name] = [o[name]];
+            }
+            o[name].push(this.value || '');
+        } else {
+            o[name] = this.value || '';
+        }
+    });
+    return o;
+  };
+
+})(this, $);

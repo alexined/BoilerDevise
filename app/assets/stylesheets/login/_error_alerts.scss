@@ -1,0 +1,57 @@
+/* Error alerts for login views */
+
+.regular-login {
+
+	/* Sign In error alerts */
+	.login-error {
+		border-radius: 3px;
+		color: white;
+		background-color: $error;
+		padding: 10px;
+		display: none;
+		margin-bottom: 25px;
+		text-align: center;
+		@include normal-type;
+	}
+
+	/* Sign Up error alerts */
+	.error {
+		border-radius: 3px;
+		color: white;
+		background-color: $error;
+		padding: 5px;
+		display: none;
+		margin: 10px 0;
+		text-align: center;
+		@include small-type;
+	}
+}
+
+/* Forgot Password & Resend Confirmation alerts */
+.forgot-pass, .resend-confirm {
+
+	#error_explanation {
+		margin-bottom: 15px;
+		background-color: $error;
+		color: white;
+		border-radius: 3px;
+		padding: 15px;
+		@include normal-type;
+
+		h2 {
+			margin-bottom: 15px;
+			@include normal-type;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			@include normal-type;
+			list-style: disc;
+			list-style-position: inside;
+		}
+	}
+}

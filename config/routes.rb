@@ -1,6 +1,7 @@
 BoilerDevise::Application.routes.draw do
 
-  devise_for :users, :admins
+  ActiveAdmin.routes(self)
+  devise_for :users
 
   devise_scope :user do
     get     'signup',   to: 'devise/registrations#new'
@@ -10,7 +11,6 @@ BoilerDevise::Application.routes.draw do
   get '/token' => 'home#token', as: :token
 
   resources :home, only: :index
-  resources :admins, only: :index
 
   root 'home#index'
 
