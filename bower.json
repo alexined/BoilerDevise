@@ -1,0 +1,10 @@
+{
+  "name": "my_project_name",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery"             : "2.0.3",
+    "backbone.stickit"   : "0.6.3",
+    "backbone-associations" : "0.5.4",
+    "blueimp-file-upload": "9.2.1"
+  }
+}
