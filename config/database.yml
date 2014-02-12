@@ -1,8 +1,0 @@
-# Postgress
-
-development:
-  adapter: postgresql
-  encoding: unicode
-  database: boilerplate_devise_app
-  host: localhost
-  min_messages: warning
