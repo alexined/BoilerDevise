@@ -1,59 +1,59 @@
 /* Accessed from regular login */
 
 .resend-confirm {
-	@include outer-container;
+	//@include outer-container;
 	overflow: hidden;
 
 	.container {
 		padding: 50px 0;
-		@include span-columns(4);
-		@include shift(3);
-		@include media($break708) {
-			@include span-columns(8);
-			@include shift(1);
-		}
+		//@include span-columns(4);
+		//@include shift(3);
+		//@include media($break708) {
+			//@include span-columns(8);
+			//@include shift(1);
+		//}
 	}
 
 	.resend-confirm-title {
-		@include large-dark-title;
-		@include large-type;
+		//@include large-dark-title;
+		//@include large-type;
 		margin-bottom: 35px;
 	}
 
 	form {
 		margin-bottom: 25px;
 		padding-bottom: 25px;
-		border-bottom: 1px solid $light-gray2;
+		border-bottom: 1px solid;
 		overflow: hidden;
 
 		.field-section {
 			margin-bottom: 15px;
 
 			label {
-				@include label1;
+				//@include label1;
 				margin-bottom: 5px;
 				font-weight: 700;
 			}
 
 			input {
-				@include text-input;
+				//@include text-input;
 				padding: 12px;
 				width: 100%;
-				@include normal-type;
+				//@include normal-type;
 			}
  		}
 
 		.remember-me {
 			margin-bottom: 15px;
 			display: block;
-			@include normal-type;
+			//@include normal-type;
 
 			label {
 				display: inline;
 			}
 
 			a {
-				color: $buzzblue;
+				color: blue;
 
 				&:hover {
 					text-decoration: underline;
@@ -81,7 +81,7 @@
 
 		a {
 			display: block;
-			color: $buzzblue;
+			color: blue;
 
 			&:hover {
 				text-decoration: underline;
@@ -93,16 +93,16 @@
 		overflow: hidden;
 
 		input {
-			@include medium-button;
+			//@include medium-button;
 			float: right;
 			width: 100%;
-			@include small-type;
+			//@include small-type;
 		}
 	}
 
 	.fb-connect {
 		width: 100%;
 		margin-bottom: 35px;
-		@include fb-connect;
+		//@include fb-connect;
 	}
 }

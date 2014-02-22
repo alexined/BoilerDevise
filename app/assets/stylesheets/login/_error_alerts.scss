@@ -6,24 +6,24 @@
 	.login-error {
 		border-radius: 3px;
 		color: white;
-		background-color: $error;
+		background-color: red;
 		padding: 10px;
 		display: none;
 		margin-bottom: 25px;
 		text-align: center;
-		@include normal-type;
+		//@include normal-type;
 	}
 
 	/* Sign Up error alerts */
 	.error {
 		border-radius: 3px;
 		color: white;
-		background-color: $error;
+		background-color: red;
 		padding: 5px;
 		display: none;
 		margin: 10px 0;
 		text-align: center;
-		@include small-type;
+		//@include small-type;
 	}
 }
 
@@ -32,15 +32,15 @@
 
 	#error_explanation {
 		margin-bottom: 15px;
-		background-color: $error;
+		background-color: red;
 		color: white;
 		border-radius: 3px;
 		padding: 15px;
-		@include normal-type;
+		//@include normal-type;
 
 		h2 {
 			margin-bottom: 15px;
-			@include normal-type;
+			//@include normal-type;
 		}
 
 		ul {
@@ -49,7 +49,7 @@
 		}
 
 		li {
-			@include normal-type;
+			//@include normal-type;
 			list-style: disc;
 			list-style-position: inside;
 		}

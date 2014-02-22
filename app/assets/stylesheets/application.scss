@@ -10,8 +10,8 @@
 @import "grid-settings";
 
 /* Sprites */
-@import "sprites/icons-hidpi";
-@import "sprites/icons";
+//@import "sprites/icons-hidpi";
+//@import "sprites/icons";
 
 /* Login - Styles for when you login through the dropdown in the nav, not when you login through sharing a campaign */
 @import "login/user_login";
@@ -23,4 +23,3 @@
 @import "about";
 @import "landing";
 @import "contact_us";
-@import "tos";
