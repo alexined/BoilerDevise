@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "2.0.0"
+ruby "2.1.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
@@ -12,7 +12,7 @@ gem 'pg',							'0.17.0'
 gem 'foreman',                      '0.63.0'
 
 # Load env
-gem "dotenv", "0.9.0"
+gem "dotenv-rails"
 
 # Use unicorn as the app server
 gem 'unicorn',                      '4.6.3'
@@ -81,8 +81,11 @@ gem 'sprite-factory',               '1.5.3', require: false
 #Json views
 gem 'rabl'
 
+#Chef tools fordeployment 
+#gem 'amoeba-deploy-tools'
+
 group :development do
-  gem 'capistrano'
+  gem 'capistrano',                 '2.15.1'
 
   # Opens emails in browser
   gem 'letter_opener',              '1.1.2'
