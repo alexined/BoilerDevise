@@ -3,7 +3,7 @@ BoilerDevise::Config = OpenStruct.new
 BoilerDevise::Config.host = ENV['DEFAULT_HOST'] || begin
   Socket.gethostbyname(Socket.gethostname).first
 rescue SocketError
-  'winsxsw.com'
+  ''
 end
 
 if Rails.env.production? || Rails.env.staging?
