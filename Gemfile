@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
-ruby "2.1.0"
+ruby                                "2.1.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails',                        '4.0.0'
 
 # Use sqlite3 as the database for Active Record
-gem 'pg',							'0.17.0'
+gem 'pg',						               	'0.17.0'
 
 # Manage our processes
 gem 'foreman',                      '0.63.0'
@@ -24,8 +24,8 @@ gem 'sendgrid',                     '1.2.0'
 gem 'airbrake'
 
 # Notifications on deploys require flowdock gem
-gem "flowdock", "~> 0.3.1"
-gem "grit", "~> 2.5.0"
+#gem "flowdock",                     "~> 0.3.1"
+#gem "grit",                         "~> 2.5.0"
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -67,7 +67,7 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 #gem 'just-datetime-picker'
 
 #Use backbone
-gem                                 "rails-backbone"
+gem "rails-backbone"
 
 # Use SCSS for stylesheets
 gem 'sass-rails',                   '~> 4.0.0'
@@ -82,7 +82,7 @@ gem 'sprite-factory',               '1.5.3', require: false
 gem 'rabl'
 
 #Chef tools fordeployment 
-#gem 'amoeba-deploy-tools'
+gem 'amoeba_deploy_tools', git: 'https://github.com/AmoebaLabs/amoeba-deploy-tools' 
 
 group :development do
   gem 'capistrano',                 '2.15.1'
