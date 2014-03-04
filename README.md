@@ -1,6 +1,6 @@
 # Boilerplate Readme 
 
-This is un extremely basic Rails 4.0 application and Ruby 2.0, which includes:
+This is un extremely basic Rails 4.0.3 application and Ruby 2.1, which includes:
 
 Unicorn - web server
 
@@ -8,7 +8,7 @@ Postgress - database
 
 Foreman - process management tool
 
-Device - 
+Device - account manager
 
 ## Installation
 
@@ -24,7 +24,7 @@ Install the gems:
 bundle install
 ```
 
-This will install Rails 4.0.0, pg, foreman, unicorn and Devise gems.
+This will install Rails 4.0.3, pg, foreman, unicorn and Devise gems.
 
 Rake devise setup task:
 
