@@ -10,6 +10,8 @@ Foreman - process management tool
 
 Device - account manager
 
+Bower - javascript package manager
+
 ## Installation
 
 Install bundler if you haven't yet:
@@ -25,6 +27,11 @@ bundle install
 ```
 
 This will install Rails 4.0.3, pg, foreman, unicorn and Devise gems.
+
+bower install
+```
+
+This will install javascript packages 
 
 Rake devise setup task:
 
